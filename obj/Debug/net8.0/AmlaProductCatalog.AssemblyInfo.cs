@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmlaProductCatalog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3ac601f7ea73f32ba4b45a039509a837527d080")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d32370f2b3247a14e0694d8d4b33b438dfd031e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmlaProductCatalog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmlaProductCatalog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "UserId": 0,
+    "TemplateName": "test",
+    "Request": "test",
+    "Response": "test",
+    "CreatedDate": "2026-04-03T09:29:36.6331432Z"
+  },
+  {
+    "Id": 2,
+    "UserId": 0,
+    "TemplateName": "test",
+    "Request": "test",
+    "Response": "test",
+    "CreatedDate": "2026-04-03T09:29:53.0225245Z"
+  },
+  {
+    "Id": 3,
+    "UserId": 0,
+    "TemplateName": "test",
+    "Request": "test",
+    "Response": "test",
+    "CreatedDate": "2026-04-03T09:31:04.7379374Z"
+  }
+]

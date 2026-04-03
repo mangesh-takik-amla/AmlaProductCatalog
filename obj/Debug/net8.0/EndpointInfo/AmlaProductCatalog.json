@@ -5,54 +5,6 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/AmlaProductCatalog/save1": {
-      "post": {
-        "tags": [
-          "AmlaProductCatalog"
-        ],
-        "parameters": [
-          {
-            "name": "email",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "templatName",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "responsePdf": {
-                    "type": "string",
-                    "format": "binary"
-                  }
-                }
-              },
-              "encoding": {
-                "responsePdf": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/AmlaProductCatalog/save": {
       "post": {
         "tags": [
@@ -96,14 +48,35 @@
         }
       }
     },
-    "/api/AmlaProductCatalog/user/{userId}": {
+    "/api/AmlaProductCatalog/{id}": {
       "get": {
         "tags": [
           "AmlaProductCatalog"
         ],
         "parameters": [
           {
-            "name": "userId",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AmlaProductCatalog"
+        ],
+        "parameters": [
+          {
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
@@ -119,36 +92,14 @@
         }
       }
     },
-    "/api/AmlaProductCatalog/email/{email}": {
-      "get": {
-        "tags": [
-          "AmlaProductCatalog"
-        ],
-        "parameters": [
-          {
-            "name": "email",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/AmlaProductCatalog/update-response/{requestId}": {
+    "/api/AmlaProductCatalog/update-response/{id}": {
       "put": {
         "tags": [
           "AmlaProductCatalog"
         ],
         "parameters": [
           {
-            "name": "requestId",
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
@@ -176,29 +127,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/AmlaProductCatalog/delete/{requestId}": {
-      "delete": {
-        "tags": [
-          "AmlaProductCatalog"
-        ],
-        "parameters": [
-          {
-            "name": "requestId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"

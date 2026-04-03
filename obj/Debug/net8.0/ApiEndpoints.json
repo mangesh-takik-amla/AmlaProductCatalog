@@ -1,24 +1,14 @@
 [
   {
     "ContainingType": "AmlaProductCatalog.Controllers.AmlaProductCatalogController",
-    "Method": "GetAllRequests",
-    "RelativePath": "api/AmlaProductCatalog/all",
+    "Method": "GetById",
+    "RelativePath": "api/AmlaProductCatalog/{id}",
     "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AmlaProductCatalog.Controllers.AmlaProductCatalogController",
-    "Method": "DeleteRequest",
-    "RelativePath": "api/AmlaProductCatalog/delete/{requestId}",
-    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "requestId",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -27,18 +17,28 @@
   },
   {
     "ContainingType": "AmlaProductCatalog.Controllers.AmlaProductCatalogController",
-    "Method": "GetRequestsByEmail",
-    "RelativePath": "api/AmlaProductCatalog/email/{email}",
-    "HttpMethod": "GET",
+    "Method": "Delete",
+    "RelativePath": "api/AmlaProductCatalog/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AmlaProductCatalog.Controllers.AmlaProductCatalogController",
+    "Method": "GetAllRequests",
+    "RelativePath": "api/AmlaProductCatalog/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -59,62 +59,20 @@
   },
   {
     "ContainingType": "AmlaProductCatalog.Controllers.AmlaProductCatalogController",
-    "Method": "SaveUserRequest1",
-    "RelativePath": "api/AmlaProductCatalog/save1",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "responsePdf",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "templatName",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AmlaProductCatalog.Controllers.AmlaProductCatalogController",
     "Method": "UpdateResponse",
-    "RelativePath": "api/AmlaProductCatalog/update-response/{requestId}",
+    "RelativePath": "api/AmlaProductCatalog/update-response/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "requestId",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "response",
         "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AmlaProductCatalog.Controllers.AmlaProductCatalogController",
-    "Method": "GetRequestsByUser",
-    "RelativePath": "api/AmlaProductCatalog/user/{userId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

@@ -137,3 +137,5 @@ C:\Users\mangesh.takik\source\repos\AmlaProductCatalog\AmlaProductCatalog\bin\De
 C:\Users\mangesh.takik\source\repos\AmlaProductCatalog\AmlaProductCatalog\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\mangesh.takik\source\repos\AmlaProductCatalog\AmlaProductCatalog\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\mangesh.takik\source\repos\AmlaProductCatalog\AmlaProductCatalog\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\mangesh.takik\source\repos\AmlaProductCatalog\AmlaProductCatalog\obj\Debug\net8.0\AmlaProductCatalog.sourcelink.json
+C:\Users\mangesh.takik\source\repos\AmlaProductCatalog\AmlaProductCatalog\bin\Debug\net8.0\data.json

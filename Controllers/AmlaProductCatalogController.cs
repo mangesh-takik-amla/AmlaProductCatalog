@@ -1,4 +1,4 @@
-﻿//using Microsoft.AspNetCore.Mvc;
+//using Microsoft.AspNetCore.Mvc;
 //using Microsoft.EntityFrameworkCore;
 //using AmlaProductCatalog.Data;
 //using AmlaProductCatalog.Models;
@@ -190,6 +190,7 @@ namespace AmlaProductCatalog.Controllers
             var newItem = new UserRequest
             {
                 Id = data.Count + 1,
+                Email = input.Email,
                 TemplateName = input.TemplateName,
                 Request = input.Request,
                 Response = input.Response,
@@ -211,17 +212,18 @@ namespace AmlaProductCatalog.Controllers
             return Ok(data.OrderByDescending(x => x.CreatedDate));
         }
 
-        // ✅ GET BY ID
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        // ✅ GET BY Email
+        [HttpGet("{email}")]
+        public async Task<IActionResult> GetByEmail(string email)
         {
             var data = await _jsonService.GetAsync();
-            var item = data.FirstOrDefault(x => x.Id == id);
 
-            if (item == null)
+            var items = data.Where(x => x.Email == email).ToList();
+
+            if (items == null || !items.Any())
                 return NotFound();
 
-            return Ok(item);
+            return Ok(items);
         }
 
         // ✅ UPDATE RESPONSE

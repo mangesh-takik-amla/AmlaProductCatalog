@@ -11,6 +11,7 @@ namespace AmlaProductCatalog
 
         public int UserId { get; set; }
 
+        public string Email { get; set; }
         public string TemplateName { get; set; }
 
         public string? Request { get; set; }
